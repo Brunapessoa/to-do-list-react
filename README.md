@@ -15,9 +15,3 @@ A simple task management app where you can add, complete, and delete tasks, as w
 - React Router v7
 - Tailwind CSS v4
 - Vite
-
-## Getting Started
-
-```bash
-npm install
-npm run dev
