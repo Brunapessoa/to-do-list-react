@@ -2,8 +2,6 @@ import { ChevronRight, Trash2 } from "lucide-react";
 import { Link } from "react-router";
 
 function Tasks({ tasksList, checkTask, deleteTask }) {
-  console.log();
-
   function urlSelectedTask(task) {
     const query = new URLSearchParams();
     query.set("id", task.id);
@@ -14,9 +12,9 @@ function Tasks({ tasksList, checkTask, deleteTask }) {
   }
 
   return (
-    <div className="flex-col justify-center bg-slate-300 max-w-md mx-auto p-5 rounded-2xl">
-      <h2 className="text-fuchsia-700 items-center text-center m-5 font-bold text-2xl text-fuchsia-00">
-        Taks List
+    <div className="flex-col justify-center bg-mauve-200 mx-auto max-w-md p-10 rounded-2xl shadow-md">
+      <h2 className="bg-linear-to-tr bg-clip-text from-mauve-500 to-mauve-600 text-transparent text-2xl pb-10 m-auto text-center font-bold">
+        Tasks List
       </h2>
       <div>
         <ul className="space-y-4">
@@ -24,20 +22,20 @@ function Tasks({ tasksList, checkTask, deleteTask }) {
             <li key={task.id} className="flex gap-2">
               <button
                 onClick={() => checkTask(task.id)}
-                className={`bg-gray-600 text-white p-2 rounded-md w-full text-left ${task.isCompleted && "line-through"}`}
+                className={`bg-mauve-600 text-white p-2 rounded-md w-full text-left ${task.isCompleted && "line-through"}`}
               >
                 {task.isCompleted && "Completed "}
                 {task.title}
               </button>
               <Link
                 to={urlSelectedTask(task)}
-                className="bg-gray-600 text-white p-2 rounded-md"
+                className="bg-mauve-600 text-white p-2 rounded-md"
               >
                 <ChevronRight size={28} strokeWidth={3} absoluteStrokeWidth />
               </Link>
               <button
                 onClick={() => deleteTask(task.id)}
-                className="bg-gray-600 text-white p-2 rounded-md"
+                className="bg-mauve-600 text-white p-2 rounded-md"
               >
                 <Trash2 size={20} strokeWidth={1.5} />
               </button>

@@ -10,25 +10,18 @@ function DetailsTask() {
   const titleSelectTask = searchParams.get("title");
   const descSelectTask = searchParams.get("description");
 
-  console.log(idSelectTask);
-  console.log(titleSelectTask);
-  console.log(descSelectTask);
-
   return (
-    <div className="w-screen h-screen bg-gre-900 p-6">
-      <h1 className="text-fuchsia-400 text-3xl p-10 m-auto text-center font-bold">
+    <div className="w-screen h-screen bg-linear-to-br from-mauve-700 to-mauve-500 p-6">
+      <h1 className="bg-linear-to-tl bg-clip-text from-white to-mauve-200 text-transparent text-3xl p-10 m-auto text-center font-bold">
         Task Details
       </h1>
-      <div className="flex-col justify-center bg-slate-300 max-w-md mx-auto p-5 rounded-2xl">
-        <h2 className="text-fuchsia-700 items-center text-center m-5 font-bold text-2xl text-fuchsia-00">
+      <div className="flex flex-col justify-center  bg-mauve-200 mx-auto max-w-md p-10 rounded-2xl shadow-md">
+        <h2 className="bg-linear-to-tr bg-clip-text from-mauve-500 to-mauve-600 text-transparent text-2xl pb-10 m-auto text-center font-bold">
           {titleSelectTask}
         </h2>
-        <p>{descSelectTask}</p>
-        <div className="flex justify-left relative mt-10 text-fuchsia-600 ">
-          <button
-            onClick={() => navigate(-1)}
-            className=" left-0 top-0 bottom-0"
-          >
+        <p className="wrap-break-words">{descSelectTask}</p>
+        <div className="flex justify-left relative mt-10 text-mauve-600 ">
+          <button onClick={() => navigate(-1)} className="left-0 bottom-0">
             <ChevronsLeftIcon />
           </button>
         </div>
