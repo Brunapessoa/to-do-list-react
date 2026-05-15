@@ -72,9 +72,9 @@ function App() {
   }
 
   return (
-    <div className="w-screen h-screen bg-gray-900">
+    <div className="w-screen h-screen bg-linear-to-br from-mauve-800 to-mauve-600">
       <div className="space-y-5">
-        <h1 className="text-fuchsia-400 text-3xl p-10 m-auto text-center font-bold">
+        <h1 className="bg-linear-to-tr bg-clip-text from-neutral-100 to-neutral-300 text-transparent text-3xl p-10 m-auto text-center font-bold">
           Tasks Management
         </h1>
         <AddNewTask addTaskOnList={addTask} />

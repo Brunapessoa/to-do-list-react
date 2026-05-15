@@ -5,12 +5,12 @@ function AddNewTask({ addTaskOnList }) {
   const [description, setDescription] = useState("");
 
   return (
-    <div className="flex bg-slate-300 space-y-5 mx-auto max-w-md p-10 rounded-2xl flex-col">
+    <div className="flex bg-mauve-200 space-y-5 mx-auto max-w-md p-10 rounded-2xl flex-col shadow-md">
       <input
         type="text"
         placeholder="Type your new task"
         id="newTask"
-        className="bg-white border-slate-700 border-2 focus:outline-slate-600  py-0.5 px-1 rounded-md"
+        className="bg-white border-mauve-800 border-2 focus:outline-mauve-800  py-0.5 px-1.5 rounded-md"
         value={title}
         onChange={function addTitle(event) {
           setTitle(event.target.value);
@@ -18,9 +18,10 @@ function AddNewTask({ addTaskOnList }) {
       />
       <input
         type="text"
-        placeholder="Discribe your task here"
+        placeholder="Describe your task here"
         id="desc"
-        className="bg-white border-slate-700 border-2 focus:outline-slate-600 py-0.5 px-1 rounded-md"
+        className="bg-white border-mauve-800 border-2
+        focus:outline-mauve-800 py-0.5 px-1.5 rounded-md"
         value={description}
         onChange={function addDescrip(event) {
           setDescription(event.target.value);
@@ -35,7 +36,7 @@ function AddNewTask({ addTaskOnList }) {
           setTitle("");
           setDescription("");
         }}
-        className="bg-slate-500 text-white rounded-md max-w-min px-5 py-1 border-2 border-slate-700 font-medium mx-auto"
+        className="bg-mauve-500 text-white rounded-md max-w-min px-5 py-1 border-2 border-mauve-600 font-medium mx-auto"
       >
         Add
       </button>
