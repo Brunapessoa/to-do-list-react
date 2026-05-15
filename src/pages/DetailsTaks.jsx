@@ -19,7 +19,7 @@ function DetailsTask() {
         <h2 className="bg-linear-to-tr bg-clip-text from-mauve-500 to-mauve-600 text-transparent text-2xl pb-10 m-auto text-center font-bold">
           {titleSelectTask}
         </h2>
-        <p className="break-words">{descSelectTask}</p>
+        <p className="wrap-break-words">{descSelectTask}</p>
         <div className="flex justify-left relative mt-10 text-mauve-600 ">
           <button onClick={() => navigate(-1)} className="left-0 bottom-0">
             <ChevronsLeftIcon />
