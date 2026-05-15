@@ -2,8 +2,6 @@ import { ChevronRight, Trash2 } from "lucide-react";
 import { Link } from "react-router";
 
 function Tasks({ tasksList, checkTask, deleteTask }) {
-  console.log();
-
   function urlSelectedTask(task) {
     const query = new URLSearchParams();
     query.set("id", task.id);

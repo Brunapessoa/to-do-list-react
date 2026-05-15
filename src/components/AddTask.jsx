@@ -16,7 +16,7 @@ function AddNewTask({ addTaskOnList }) {
           setTitle(event.target.value);
         }}
       />
-      <input
+      <textarea
         type="text"
         placeholder="Describe your task here"
         id="desc"
@@ -30,7 +30,9 @@ function AddNewTask({ addTaskOnList }) {
       <button
         onClick={() => {
           if (!title.trim() || !description.trim()) {
-            return alert("Type the title or description of your taks");
+            return alert(
+              "Please fill in the title and description of your task",
+            );
           }
           addTaskOnList(title, description);
           setTitle("");

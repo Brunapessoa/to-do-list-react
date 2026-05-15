@@ -15,22 +15,15 @@ function App() {
       {
         id: 1,
         title: "Study Software Programming",
-        description: "Learning about React and Tailwind",
-        day: "3th may at 12:44",
+        description:
+          "Review React hooks concepts, practice building components with Tailwind CSS, and complete at least two exercises from the current module. Take notes on anything unclear to revisit later.",
         isCompleted: false,
       },
       {
         id: uuidv4(),
-        title: "Paiting",
-        description: "Painting the square with Floripa image",
-        day: "3th may at 17:30",
-        isCompleted: false,
-      },
-      {
-        id: uuidv4(),
-        title: "Home organizing",
-        description: "To do the dishes and check the lunch for tomorrow",
-        day: "3th may at 18:30",
+        title: "Physical Exercise",
+        description:
+          "Go for a 30-minute walk or do a home workout session. Stretch before and after to avoid injury. Stay hydrated and track your progress to keep the habit consistent.",
         isCompleted: false,
       },
     ];
@@ -49,7 +42,6 @@ function App() {
     };
     setTasks([...tasks, newTask]);
   }
-  console.log(tasks);
 
   function checkStatusTask(idOfTask) {
     const newTaskList = tasks.map((task) => {
@@ -72,9 +64,9 @@ function App() {
   }
 
   return (
-    <div className="w-screen h-screen bg-linear-to-br from-mauve-800 to-mauve-600">
+    <div className="w-screen h-screen bg-linear-to-br from-mauve-700 to-mauve-500">
       <div className="space-y-5">
-        <h1 className="bg-linear-to-tr bg-clip-text from-neutral-100 to-neutral-300 text-transparent text-3xl p-10 m-auto text-center font-bold">
+        <h1 className="bg-linear-to-tl bg-clip-text from-white to-mauve-200 text-transparent text-3xl p-10 m-auto text-center font-bold">
           Tasks Management
         </h1>
         <AddNewTask addTaskOnList={addTask} />
