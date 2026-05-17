@@ -64,7 +64,7 @@ function App() {
   }
 
   return (
-    <div className="w-screen min-h-screen bg-linear-to-br from-mauve-900 to-mauve-600 px-4 pb-4">
+    <div className="w-screen min-h-screen bg-linear-to-br from-pink-950 to-mauve-700 px-4 pb-4">
       <div className="space-y-5">
         <h1 className="bg-linear-to-tl bg-clip-text from-white to-mauve-200 text-transparent text-3xl p-10 m-auto text-center font-bold">
           Tasks Management
