@@ -5,7 +5,7 @@ function AddNewTask({ addTaskOnList }) {
   const [description, setDescription] = useState("");
 
   return (
-    <div className="flex bg-mauve-200 space-y-5 my-10 mx-auto max-w-md py-10 px-5 rounded-2xl flex-col shadow-md">
+    <div className="flex bg-mauve-200 space-y-5 my-10 mx-auto max-w-md p-10 rounded-2xl flex-col shadow-md">
       <input
         type="text"
         placeholder="Type your new task"
